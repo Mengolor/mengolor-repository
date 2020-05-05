@@ -1,0 +1,29 @@
+/* HTML and JS can't be changed. CSS only */
+
+<html>
+<head>
+
+<style>
+/*placing content into the div*/
+div::after {
+  content: "Hello world!";
+}
+
+/*when input :focus the text should change*/
+input:focus + div::after {
+  content: "Goodbye, world!";
+}
+</style>
+
+</head>
+
+<body>
+
+<form>
+  <div class="nf-field-element">
+    <input type="text" name="ninja-forms-field element-your-name nf-element">
+  </div>
+</form>
+
+</body>
+</html>
